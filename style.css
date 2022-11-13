@@ -1,0 +1,62 @@
+body{
+background-color:#eee ;
+
+}
+
+
+
+
+nav{
+width: 100%;
+height: 100px;
+background-color:rgb(96, 96, 194);
+}
+
+
+
+ul{
+margin-left: 60px;
+
+}
+
+ul li{
+list-style: none;
+display: inline-block;
+float: left;
+line-height: 100px;
+}
+
+ul li a{
+display: block;    
+text-decoration: none;
+font-size: 14px;
+font-family: arial;
+color:white ;
+padding: 0 20px;s
+}
+
+ul li a:hover {
+ color:deepskyblue ;  
+
+
+
+}
+
+li a:hover:not(.active) {
+    background-color: rgb(16, 74, 156);
+  }
+  
+  .active {
+    background-color: #04AA6D;
+  }
+
+li{
+    float:left ;
+}
+
+li a:hover:not(.active) {
+    background-color: rgb(48, 108, 168);
+  }
+  
+
+
