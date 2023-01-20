@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Számoló gép</title>
+  <body style="background-color:lightskyblue;">
+  <link rel="stylesheet" href="style.css">
+  <body>
+  <nav>
+    <ul>
+    <li><a  href="index.html">Főoldal</a></li>   
+    <li><a  href="keplink.html">Képlink</a></li>
+    <li><a  href="table.html">Órarend</a></li>
+    <li><a  href="urlap.html">Személyes Adatok Űrlap</a></li>
+    <li><a  href="lista.html">Listák</a></li>
+    <li><a href="evszakok.html">Évszakok</a></li>
+    <li><a href="szamologep.html">Számoló gép</a></li>
+    </ul>
+  </nav>
+  </body>
+  
+<form name="szamol">
+
+  <h1 style="background-color:deepskyblue ;">Számoló gép</h1>
+
+  <h4>Első szám:<input name="egy"><br></h4>
+  <h4>Második szám:<input name="ketto"><br><br></h4>
+  <input type="button" value=" + " onClick="plusz()">
+  <input type="button" value=" - " onClick="minusz()">
+  <input type="button" value=" * " onClick="szor()">
+  <input type="button" value=" / " onClick="oszt()"><br>
+  <p>
+  <h4>Eredmény: <input name="eredmeny"></h4>
+
+  </form>
+  <script>
+
+  function plusz() {
+  document.szamol.eredmeny.value = document.szamol.egy.value *1 + document.szamol.ketto.value * 1;
+  }
+  function minusz() {
+  document.szamol.eredmeny.value = document.szamol.egy.value - document.szamol.ketto.value;
+  }
+  function szor() {
+  document.szamol.eredmeny.value = document.szamol.egy.value * document.szamol.ketto.value;
+  }
+  function oszt() {
+  document.szamol.eredmeny.value = document.szamol.egy.value / document.szamol.ketto.value;
+  }
+
+  </script>
